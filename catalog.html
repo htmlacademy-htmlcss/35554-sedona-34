@@ -106,8 +106,12 @@
               </li>
             </ul>
           </fieldset>
-
-          Стоимость
+          <p class="catalog-filter-price">
+            <label class="control" for="price">Стоимость, ₽:</label>
+            <input class="control-input" type="number" name="price" placeholder="от" value="0">
+            <input class="control-input" type="number" name="price" placeholder="до" value="9000">
+            <input type="range" id="price" name="price" min="0" max="9000" step="1" value="0">
+          </p>
 
           <button class="button-form" type="submit">Применить</button>
           <button class="button-form button-reset" type="reset">Сбросить</button>

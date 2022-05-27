@@ -107,6 +107,7 @@
               </li>
             </ul>
           </fieldset>
+
           <p class="catalog-filter-price">
             <label class="control" for="price">Стоимость, ₽:</label>
             <input class="control-input" type="number" name="price" placeholder="от" value="0">
@@ -121,9 +122,11 @@
     </section>
     <section class="catalog-hotels" aria-label="сортировка">
       <h2 class="visually-hidden">Список гостиниц Седоны</h2>
-      <p class="number-hotels">Найдено гостиниц: 38</p>
+      <p class="number-hotels">Найдено гостиниц: <span>38</span></p>
       <select class="select-control" name="sorting">
-        <option value="cheap">Сначала дешёвые</option>
+        <option selected value="cheap">Сначала дешёвые</option>
+        <option value="expensive">Сначала дорогие</option>
+        <option value="popular">Сначала популярные</option>
       </select>
       <a class="button button-current" href="#">
         <span class="visually-hidden">Показать плитку</span>
@@ -210,7 +213,9 @@
       </ul>
       <p class="number-page">Гостиниц на странице:</p>
       <select class="select-number-page" name="sorting">
-        <option value="4">4</option>
+        <option selected value="4">4</option>
+        <option value="2">2</option>
+        <option value="6">6</option>
       </select>
     </section>
     <section class="catalog-subscription">
@@ -252,6 +257,7 @@
       <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </section>
     <section class="footer-copyright">
+      <h2 class="visually-hidden">HTML Academy</h2>
       <a class="html-academy-link" href="https://htmlacademy.ru/">
         <img class="html-academy-logo" src="#" alt="Логотип HTML Academy">
       </a>

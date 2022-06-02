@@ -135,6 +135,35 @@ body{
   line-height: 26px;
 }
 
+.section-filters{
+  color: #fff;
+  background: #82B3D3 url("../images/background-catalog.jpg") no-repeat;
+  background-size: 100% auto;
+}
+
+.inner-header-title{
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: bold;
+}
+
+.breadcrumbs-link{
+  text-decoration: none;
+  color: #fff;
+}
+
+.catalog-filter-title{
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.control-input-price{
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
 /* Form */
 
 .button-form{
@@ -149,6 +178,20 @@ body{
 
 .button-subscription{
   background-color: #82B3D3;
+}
+
+.button-form-apply{
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #82B3D3
+}
+
+.button-reset{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: none;
+  background-color: transparent;
 }
 
 /* Footer */

@@ -128,13 +128,13 @@
         <option value="expensive">Сначала дорогие</option>
         <option value="popular">Сначала популярные</option>
       </select>
-      <a class="button button-current" href="#">
+      <a class="button-sorting button-current" href="#">
         <span class="visually-hidden">Показать плитку</span>
       </a>
-      <a class="button" href="#">
+      <a class="button-sorting" href="#">
         <span class="visually-hidden">Показать карточки</span>
       </a>
-      <a class="button" href="#">
+      <a class="button-sorting" href="#">
         <span class="visually-hidden">Показать список</span>
       </a>
       <ul class="hotel-list">
@@ -204,7 +204,7 @@
         </li>
       </ul>
       <p class="number-page">Гостиниц на странице:</p>
-      <select class="select-number-page" name="sorting">
+      <select class="select-control" name="sorting">
         <option selected value="4">4</option>
         <option value="2">2</option>
         <option value="6">6</option>
@@ -219,9 +219,8 @@
             Ваш e-mail
             <input type="email" id="email" name="email" placeholder="Ваш e-mail">
           </label>
-
         </p>
-        <input class="button-form" type="submit" value="Подписаться">
+        <input class="button-form button-subscription" type="submit" value="Подписаться">
       </form>
     </section>
   </main>

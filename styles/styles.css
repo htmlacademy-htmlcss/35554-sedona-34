@@ -18,7 +18,7 @@ body{
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  font-weight: normal;
+  font-weight: 400;
   background-color: #fff;
   color: #000;
 }
@@ -28,7 +28,7 @@ body{
   line-height: 20px;
   color: #fff;
   background-color: #756157;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -39,7 +39,7 @@ body{
 .navigation-link{
   font-size: 20px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
   text-decoration: none;
   text-align: center;
@@ -62,7 +62,7 @@ body{
 .hero-description{
   font-size: 30px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -82,7 +82,7 @@ body{
 
 .advantages-title{
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
   color: #000;
@@ -113,7 +113,7 @@ body{
 .subscription-title{
   font-size: 30px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -144,7 +144,7 @@ body{
 .inner-header-title{
   font-size: 60px;
   line-height: 78px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .breadcrumbs-link{
@@ -155,7 +155,7 @@ body{
 .catalog-filter-title{
   font-size: 20px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .control-input-price{
@@ -166,11 +166,20 @@ body{
 
 /* Form */
 
+input[type="email"]{
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: #F2F2F2;
+  border: none;
+}
+
 .button-form{
   border: none;
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: bold;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   background-color: #756157;
@@ -178,25 +187,97 @@ body{
 
 .button-subscription{
   background-color: #82B3D3;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.button-search{
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .button-form-apply{
-  font-size: 16px;
-  line-height: 20px;
   background-color: #82B3D3
 }
 
 .button-reset{
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: none;
   background-color: transparent;
 }
 
-/* Footer */
+.select-control{
+  font-family: inherit;
+  color: #333333;
+  border: 2px solid #E5E5E5;
+  font-size: 18px;
+}
 
-.page-footer{}
+/* Catalog */
+
+.hotel-card{
+  color: #333333;
+}
+
+.hotel-card-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000;
+}
+
+.number-hotels{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.button-sorting{
+  color: #000;
+  text-decoration: none;
+  border: 2px solid #E5E5E5;
+}
+
+.button-current{
+  border-color: #000;
+}
+
+.button-favorites{
+  background-color: #82B3D3;
+}
+
+.button-infavorite{
+  background-color: #7DB54F;
+}
+
+.hotel-card-rating{
+  background-color: #F2F2F2;
+}
+
+.catalog-subscription{
+  text-align: center;
+}
+
+/* Pagination */
+
+.pagination-link{
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #82B3D3;
+}
+
+.pagination-current{
+  color: #000;
+  background-color: #F2F2F2;
+}
+
+
+
+/* Footer */
 
 .footer-contacts-phone{
   font-size: 40px;

@@ -13,14 +13,30 @@
   font-weight: 700;
   font-display: swap;
 }
+html{
+  height: 100%;
+}
 
 body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   background-color: #fff;
   color: #000;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.main-container{
+  flex-grow: 1;
 }
 
 .button{
@@ -35,6 +51,27 @@ body{
 }
 
 /* Header */
+
+.navigation{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-logo{
+  margin-right: 30px;
+}
+
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  width: 390px;
+}
+
+.navigation-user{
+  max-width: 264px;
+  margin-left: auto;
+}
 
 .navigation-link{
   font-size: 20px;
@@ -56,7 +93,11 @@ body{
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  text-align: center;
+}
+
+.logo{
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-description{
@@ -64,20 +105,30 @@ body{
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  width: 620px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-reasons{
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 .advantages-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
   color: #333333;
 }
 
 .advantages-item{
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .advantages-title{
@@ -88,13 +139,14 @@ body{
   color: #000;
 }
 
-.advantages-item-blue h3{
+.advantages-title-main{
   color: #fff;
 }
 
 .advantages-item-blue{
   background-color: #82B3D3;
   color: #fff;
+  width: 1200px;
 }
 
 .advantages-item-lightblue{
@@ -121,6 +173,8 @@ body{
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  width: 592px;
+  margin: 0 auto;
 }
 
 .subscription-section{
@@ -133,7 +187,15 @@ body{
 .subscription-description{
   font-size: 22px;
   line-height: 26px;
+  width: 475px;
+  margin: 0 auto;
 }
+
+.subscription-form-group input{
+  width: 600px;
+}
+
+
 
 .section-filters{
   color: #fff;
@@ -279,10 +341,30 @@ input[type="email"]{
 
 /* Footer */
 
+.page-footer{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-social{
+  width: 142px;
+}
+
+.footer-contacts{
+  width: 720px;
+  text-align: center;
+}
+
 .footer-contacts-phone{
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+}
+
+.footer-copyright{
+  width: 115px;
 }

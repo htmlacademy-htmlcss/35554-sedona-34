@@ -350,6 +350,7 @@ input[type="email"]{
 
 .footer-social{
   width: 142px;
+  margin-right: auto;
 }
 
 .footer-contacts{
@@ -367,4 +368,5 @@ input[type="email"]{
 
 .footer-copyright{
   width: 115px;
+  margin-left: auto;
 }

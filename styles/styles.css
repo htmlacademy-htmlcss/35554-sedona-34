@@ -69,7 +69,7 @@ body{
 }
 
 .navigation-user{
-  max-width: 264px;
+  max-width: 260px;
   margin-left: auto;
 }
 
@@ -173,7 +173,7 @@ body{
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  width: 592px;
+  width: 590px;
   margin: 0 auto;
 }
 
@@ -187,15 +187,11 @@ body{
 .subscription-description{
   font-size: 22px;
   line-height: 26px;
-  width: 475px;
+  width: 480px;
   margin: 0 auto;
 }
 
-.subscription-form-group input{
-  width: 600px;
-}
-
-
+/* Filters */
 
 .section-filters{
   color: #fff;
@@ -214,16 +210,55 @@ body{
   color: #fff;
 }
 
+.container-filters{
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.catalog-filters{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.catalog-filter-group{
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-right: 70px;
+}
+
 .catalog-filter-title{
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
 }
 
+.catalog-filter-list{
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-price{
+  width: 290px;
+  margin: 0;
+  margin-right: 70px;
+}
+
 .control-input-price{
   border: 2px solid #fff;
   background-color: transparent;
   color: #fff;
+  width: 140px;
+}
+
+.control-range{
+  width: 290px;
+}
+
+.container-button{
+  width: 160px;
 }
 
 /* Form */
@@ -234,6 +269,7 @@ input[type="email"]{
   line-height: inherit;
   background-color: #F2F2F2;
   border: none;
+  width: 600px;
 }
 
 .button-form{
@@ -268,24 +304,20 @@ input[type="email"]{
   background-color: transparent;
 }
 
-.select-control{
-  font-family: inherit;
-  color: #333333;
-  border: 2px solid #E5E5E5;
-  font-size: 18px;
-}
 
 /* Catalog */
 
-.hotel-card{
-  color: #333333;
+.catalog-hotels{
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.hotel-card-title{
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  color: #000;
+.sorting-area{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .number-hotels{
@@ -293,6 +325,40 @@ input[type="email"]{
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin-right: auto;
+}
+
+.select-control{
+  font-family: inherit;
+  color: #333333;
+  border: 2px solid #E5E5E5;
+  font-size: 18px;
+  width: 290px;
+}
+
+.button-area{
+  width: 160px;
+  margin-left: 80px;
+}
+
+.hotel-list{
+  width: 1060px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-card{
+  color: #333333;
+  width: 340px;
+}
+
+.hotel-card-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000;
 }
 
 .button-sorting{
@@ -323,6 +389,22 @@ input[type="email"]{
 
 /* Pagination */
 
+.pagination-container{
+  width: 1060px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination{
+  width: 400px;
+  margin-right: auto;
+}
+
+.pagination-select{
+  width: 160px;
+  margin-left: 50px;
+}
+
 .pagination-link{
   text-decoration: none;
   font-size: 20px;
@@ -349,7 +431,7 @@ input[type="email"]{
 }
 
 .footer-social{
-  width: 142px;
+  width: 140px;
   margin-right: auto;
 }
 

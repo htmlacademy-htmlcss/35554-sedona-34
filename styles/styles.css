@@ -30,6 +30,17 @@ body{
   color: #000;
 }
 
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
 .container{
   margin: 0 auto;
   width: 1200px;
@@ -59,13 +70,17 @@ body{
 }
 
 .navigation-logo{
+  margin-bottom: -5px;
+  line-height: 0;
   margin-right: 30px;
 }
 
 .navigation-list{
+  display: flex;
   margin: 0;
   padding: 0;
   width: 390px;
+  list-style: none;
 }
 
 .navigation-user{
@@ -73,7 +88,15 @@ body{
   margin-left: auto;
 }
 
+.navigation-user .navigation-link{
+  min-height: 18px;
+  min-width: 18px;
+  padding: 24px 12px;
+}
+
 .navigation-link{
+  display: block;
+  padding: 20px 17px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -98,6 +121,8 @@ body{
 .logo{
   display: block;
   margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 145px;
 }
 
 .hero-description{
@@ -114,6 +139,9 @@ body{
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 90px;
 }
 
 .advantages-list{
@@ -124,6 +152,7 @@ body{
   flex-wrap: wrap;
   text-align: center;
   color: #333333;
+  list-style: none;
 }
 
 .advantages-item{
@@ -137,16 +166,28 @@ body{
   line-height: 28px;
   text-transform: uppercase;
   color: #000;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 .advantages-title-main{
+  padding-top: 90px;
   color: #fff;
+}
+
+.advantages-description{
+  display: block;
+  margin: 0;
+  padding: 30px 85px 90px 85px;
 }
 
 .advantages-item-blue{
   background-color: #82B3D3;
   color: #fff;
   width: 1200px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .advantages-item-lightblue{
@@ -159,6 +200,8 @@ body{
 
 .search-section{
   text-align: center;
+  padding-top: 92px;
+  padding-bottom: 92px;
 }
 
 .search-title,
@@ -167,6 +210,8 @@ body{
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 30px;
 }
 
 .search-description{
@@ -175,6 +220,7 @@ body{
   color: #333333;
   width: 590px;
   margin: 0 auto;
+  padding-bottom: 56px;
 }
 
 .subscription-section{
@@ -182,6 +228,7 @@ body{
   color: #fff;
   background: #82B3D3 url("../images/background.jpg") no-repeat;
   background-size: 100% auto;
+  padding: 94px 200px;
 }
 
 .subscription-description{
@@ -189,6 +236,7 @@ body{
   line-height: 26px;
   width: 480px;
   margin: 0 auto;
+  padding-bottom: 44px;
 }
 
 /* Filters */
@@ -427,12 +475,28 @@ input[type="email"]{
   display: flex;
   width: 1060px;
   margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
   justify-content: space-between;
 }
 
 .footer-social{
   width: 140px;
   margin-right: auto;
+}
+
+.footer-social-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.social-button{
+  display: block;
+  min-width: 18px;
+  min-height: 14px;
+  padding: 12px;
 }
 
 .footer-contacts{
@@ -451,4 +515,9 @@ input[type="email"]{
 .footer-copyright{
   width: 115px;
   margin-left: auto;
+}
+
+.html-academy-logo{
+  padding-top: 8px;
+  padding-bottom: 8px;
 }

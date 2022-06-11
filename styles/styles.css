@@ -247,10 +247,24 @@ body{
   background-size: 100% auto;
 }
 
+.inner-header{
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+
 .inner-header-title{
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin: 0;
+}
+
+.breadcrumbs{
+  display: flex;
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+  list-style: none;
 }
 
 .breadcrumbs-link{
@@ -258,9 +272,22 @@ body{
   color: #fff;
 }
 
+.breadcrumbs-link-main{
+  display: block;
+  min-height: 12px;
+  min-width: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 25px;
+}
+
 .container-filters{
   width: 1060px;
   margin: 0 auto;
+}
+
+.filters-hotels{
+  padding-bottom: 70px;
 }
 
 .catalog-filters{
@@ -281,11 +308,13 @@ body{
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  padding-bottom: 30px;
 }
 
 .catalog-filter-list{
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .catalog-filter-price{
@@ -366,6 +395,8 @@ input[type="email"]{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 
 .number-hotels{
@@ -373,7 +404,9 @@ input[type="email"]{
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
   margin-right: auto;
+  padding: 7px 0;
 }
 
 .select-control{
@@ -386,33 +419,23 @@ input[type="email"]{
 
 .button-area{
   width: 160px;
-  margin-left: 80px;
-}
-
-.hotel-list{
-  width: 1060px;
-  margin: 0;
-  padding: 0;
+  margin-left:78px;
   display: flex;
-  flex-wrap: wrap;
-}
-
-.hotel-card{
-  color: #333333;
-  width: 340px;
-}
-
-.hotel-card-title{
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  color: #000;
 }
 
 .button-sorting{
+  display: block;
+  min-width: 16px;
+  min-height: 14px;
+  padding: 14px;
+  margin-right: 8px;
   color: #000;
   text-decoration: none;
   border: 2px solid #E5E5E5;
+}
+
+.button-sorting:last-child{
+  margin-right: 0;
 }
 
 .button-current{
@@ -427,12 +450,41 @@ input[type="email"]{
   background-color: #7DB54F;
 }
 
+.hotel-list{
+  width: 1060px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 96px;
+}
+
+.hotel-card{
+  color: #333333;
+  width: 300px;
+  padding: 20px;
+  margin-right: 18px;
+}
+
+.hotel-card:nth-child(3n){
+  margin-right: 0;
+}
+
+.hotel-card-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000;
+}
+
 .hotel-card-rating{
   background-color: #F2F2F2;
 }
 
 .catalog-subscription{
   text-align: center;
+  padding: 94px 200px;
 }
 
 /* Pagination */
@@ -441,10 +493,15 @@ input[type="email"]{
   width: 1060px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .pagination{
+  display: flex;
   width: 400px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   margin-right: auto;
 }
 
@@ -453,13 +510,28 @@ input[type="email"]{
   margin-left: 50px;
 }
 
+.pagination-item{
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
+}
+
+.pagination-item:last-child{
+  margin-right: 0;
+}
+
 .pagination-link{
+  display: block;
   text-decoration: none;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  text-align: center;
   color: #fff;
   background-color: #82B3D3;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .pagination-current{
@@ -467,6 +539,11 @@ input[type="email"]{
   background-color: #F2F2F2;
 }
 
+.number-page{
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 
 /* Footer */
@@ -487,7 +564,7 @@ input[type="email"]{
 
 .footer-social-list{
   margin: 0;
-  padding: 0;
+  padding: 5px 0;
   list-style: none;
   display: flex;
 }
@@ -505,11 +582,14 @@ input[type="email"]{
 }
 
 .footer-contacts-phone{
+  display: block;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .footer-copyright{
@@ -517,7 +597,8 @@ input[type="email"]{
   margin-left: auto;
 }
 
-.html-academy-logo{
+.html-academy-link{
+  display: block;
   padding-top: 8px;
   padding-bottom: 8px;
 }

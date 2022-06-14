@@ -168,12 +168,17 @@ body{
   text-transform: uppercase;
   color: #000;
   margin: 0;
-  padding-top: 100px;
+  padding-top: 103px;
   padding-bottom: 30px;
 }
 
+.advantages-title-set{
+  padding-top: 183px;
+  padding-bottom: 0;
+}
+
 .advantages-title-main{
-  padding-top: 90px;
+  padding-top: 92px;
   color: #fff;
 }
 
@@ -184,11 +189,15 @@ body{
 }
 
 .advantages-item-blue{
+  display: flex;
+  justify-content: space-between;
   background-color: #82B3D3;
   color: #fff;
   width: 1200px;
-  display: flex;
-  justify-content: space-between;
+}
+
+.advantages-item-blue-second{
+  flex-direction: row-reverse;
 }
 
 .advantages-item-lightblue{

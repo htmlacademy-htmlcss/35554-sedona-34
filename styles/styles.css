@@ -26,7 +26,7 @@ body{
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #F2F2F2;
   color: #000;
 }
 
@@ -44,6 +44,8 @@ body{
 .container{
   margin: 0 auto;
   width: 1200px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main-container{
@@ -249,6 +251,18 @@ body{
   padding-bottom: 44px;
 }
 
+.subscription-form{
+  display: grid;
+  grid-template-columns: 1fr 200px;
+}
+
+.subscription-input{
+  grid-column: 1 / 2;
+  border-radius: 10px 0 0 10px;
+  padding: 19px 22px;
+  box-sizing: border-box;
+}
+
 /* Filters */
 
 .section-filters{
@@ -371,9 +385,12 @@ input[type="email"]{
 }
 
 .button-subscription{
+  grid-column: 2 / 3;
+  border-radius: 0 10px 10px 0;
   background-color: #82B3D3;
   font-size: 20px;
   line-height: 36px;
+  padding: 12px 15px;
 }
 
 .button-search{
@@ -461,11 +478,12 @@ input[type="email"]{
 }
 
 .hotel-list{
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
   width: 1060px;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
   margin-bottom: 96px;
 }
@@ -475,10 +493,6 @@ input[type="email"]{
   width: 300px;
   padding: 20px;
   margin-right: 18px;
-}
-
-.hotel-card:nth-child(3n){
-  margin-right: 0;
 }
 
 .hotel-card-title{

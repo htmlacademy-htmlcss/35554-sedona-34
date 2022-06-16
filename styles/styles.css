@@ -358,7 +358,6 @@ body{
   margin: 0 70px 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 145px);
-  row-gap: 20px;
 }
 
 .filter-price-title{
@@ -367,14 +366,20 @@ body{
 }
 
 .control-input-price{
+  height: 48px;
+  box-sizing: border-box;
   border: 2px solid #fff;
+  font-size: inherit;
+  line-height: inherit;
   background-color: transparent;
   color: #fff;
-  width: 140px;
+  width: 145px;
 }
 
 .control-range{
   width: 290px;
+  margin: 0;
+  padding: 0;
 }
 
 .container-button{

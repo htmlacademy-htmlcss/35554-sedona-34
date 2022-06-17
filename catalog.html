@@ -48,7 +48,7 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
+              <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
@@ -108,12 +108,12 @@
               </ul>
             </fieldset>
 
-            <p class="catalog-filter-price">
-              <label class="control catalog-filter-title" for="price">Стоимость, ₽:</label>
-              <input class="control-input control-input-price" type="number" name="price" placeholder="от" value="0">
-              <input class="control-input control-input-price" type="number" name="price" placeholder="до" value="9000">
+            <div class="catalog-filter-price">
+              <label class="catalog-filter-title filter-price-title" for="price">Стоимость, ₽:</label>
+              <input class="control-input-price" type="number" name="price" placeholder="от" value="0">
+              <input class="control-input-price" type="number" name="price" placeholder="до" value="9000">
               <input class="control-range" type="range" id="price" name="price" min="0" max="9000" step="1" value="0">
-            </p>
+            </div>
             <div class="container-button">
               <button class="button-form button-form-apply" type="submit">Применить</button>
               <button class="button-form button-reset" type="reset">Сбросить</button>
@@ -153,7 +153,9 @@
           <span class="hotel-card-price">От 4000 ₽</span>
           <a class="button" href="#">подробнее</a>
           <button class="button-form button-favorites" type="submit">в избранное</button>
-          <span class="visually-hidden stars-rating">4 звезды</span>
+          <p class="stars-rating">
+            <span class="visually-hidden">4 звезды</span>
+          </p>
           <p class="hotel-card-rating">Рейтинг: 8,5</p>
         </li>
 
@@ -165,7 +167,9 @@
           <span class="hotel-card-price">От 5000 ₽</span>
           <a class="button" href="#">подробнее</a>
           <button class="button-form button-favorites button-infavorite" type="submit">в избранном</button>
-          <span class="visually-hidden stars-rating">4 звезды</span>
+          <p class="stars-rating">
+            <span class="visually-hidden">4 звезды</span>
+          </p>
           <p class="hotel-card-rating">Рейтинг: 9,2</p>
         </li>
 
@@ -177,7 +181,9 @@
           <span class="hotel-card-price">От 2500 ₽</span>
           <a class="button" href="#">подробнее</a>
           <button class="button-form button-favorites" type="submit">в избранное</button>
-          <span class="visually-hidden stars-rating">3 звезды</span>
+          <p class="stars-rating">
+            <span class="visually-hidden">4 звезды</span>
+          </p>
           <p class="hotel-card-rating">Рейтинг: 6,9</p>
         </li>
 
@@ -189,7 +195,9 @@
           <span class="hotel-card-price">От 1500 ₽</span>
           <a class="button" href="#">подробнее</a>
           <button class="button-form button-favorites" type="submit">в избранное</button>
-          <span class="visually-hidden stars-rating">2 звезды</span>
+          <p class="stars-rating">
+            <span class="visually-hidden">4 звезды</span>
+          </p>
           <p class="hotel-card-rating">Рейтинг: 5,0</p>
         </li>
       </ul>
@@ -227,12 +235,8 @@
       <h2 class="subscription-title">Подпишитесь на рассылку</h2>
       <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="subscription-form-group">
-          <label class="visually-hidden" for="email">
-            Ваш e-mail
-            <input type="email" id="email" name="email" placeholder="Ваш e-mail">
-          </label>
-        </p>
+        <label class="visually-hidden" for="email">Ваш e-mail</label>
+        <input class="subscription-input" type="email" id="email" name="email" placeholder="Ваш e-mail">
         <input class="button-form button-subscription" type="submit" value="Подписаться">
       </form>
     </section>
@@ -243,17 +247,17 @@
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button button-vk" href="https://vk.com/htmlacademy">
+          <a class="social-button button-vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button button-tl" href="https://t.me/htmlacademy">
+          <a class="social-button button-tl" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button button-yt" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social-button button-yt" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>

@@ -233,8 +233,9 @@ body{
 }
 
 .search-section{
+  display: grid;
   text-align: center;
-  padding: 92px 300px;
+  padding: 92px 305px;
 }
 
 .search-title,
@@ -544,6 +545,7 @@ input[type="email"]{
 .hotel-card{
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 211px auto 21px 37px 37px;
   column-gap: 20px;
   row-gap: 16px;
   color: #333333;
@@ -565,21 +567,13 @@ input[type="email"]{
   grid-column: 1 / 3;
 }
 
-.hotel-card-type{
-
-}
-
-.hotel-card-price{
-
-}
-
 .stars-rating{
   margin: 0;
 }
 
 .hotel-card-rating{
   margin: 0;
-  padding: 9px 22px 8px 23px;
+  padding: 8px 22px;
   border-radius: 4px;
   font-size: 16px;
   line-height: 20px;

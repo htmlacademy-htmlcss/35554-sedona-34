@@ -93,10 +93,18 @@ body{
   margin-left: auto;
 }
 
+.navigation-item{
+  padding: 0px 17px;
+}
+
 .navigation-user .navigation-link{
   min-height: 18px;
   min-width: 18px;
   padding: 24px 12px;
+}
+
+.navigation-user .navigation-item{
+  padding: 0;
 }
 
 .navigation-center{
@@ -108,7 +116,9 @@ body{
 
 .navigation-link{
   display: block;
-  padding: 20px 17px;
+  max-height: 66px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -117,9 +127,35 @@ body{
   text-align: center;
 }
 
+.navigation-link-current{
+  box-sizing: border-box;
+  border-bottom: 2px solid #756257;
+}
+
+.navigation-user .navigation-item:nth-child(1) .navigation-link{
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link{
+  position: relative;
+  background-image: url("../images/favorite.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .navigation-favorites-numb{
+  position: absolute;
+  top: 15px;
+  right: -3px;
   font-size: 10px;
   line-height: 13px;
+  font-weight: 400;
+  padding: 3px 4px;
+  border-radius: 50%;
+  background-color: #7DB54F;
+  color: #ffffff;
 }
 
 .button-navigation{
@@ -129,9 +165,10 @@ body{
 /* Main */
 
 .main-hero{
-  background-image: url("../images/index-background.jpg");
+  background-image: url("../images/divider.png"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-position: 0px 428px, top;
 }
 
 .logo{
@@ -172,8 +209,35 @@ body{
 }
 
 .advantages-item{
+  position: relative;
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
+}
+
+.advantages-item::before{
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 162px;
+  background-repeat: no-repeat;
+}
+.advantages-housing::before{
+  width: 76px;
+  height: 71px;
+  background-image: url("../images/house.svg");
+  }
+
+.advantages-food::before{
+  width: 75px;
+  height: 71px;
+  background-image: url("../images/food.svg");
+}
+
+.advantages-souvenirs::before{
+  width: 65px;
+  height: 77px;
+  left: 165px;
+  background-image: url("../images/souvenir.svg");
 }
 
 .advantages-title{
@@ -209,7 +273,7 @@ body{
 }
 
 .advantages-description-bottom{
-  padding-bottom: 100px;
+  padding-bottom: 102px;
 }
 
 .advantages-item-blue{
@@ -233,7 +297,6 @@ body{
 }
 
 .search-section{
-  display: grid;
   text-align: center;
   padding: 92px 305px;
 }
@@ -254,7 +317,7 @@ body{
   color: #333333;
   width: 590px;
   margin: 0 auto;
-  padding-bottom: 56px;
+  padding-bottom: 55px;
 }
 
 .subscription-section{
@@ -308,14 +371,33 @@ body{
 .breadcrumbs{
   display: flex;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 8px;
   margin: 0;
   list-style: none;
 }
 
+.breadcrumbs-item{
+  position: relative;
+  margin-right: 25px;
+}
+
+.breadcrumbs-item:not(:last-child)::after{
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 9px;
+  top: 6px;
+  left: 22px;
+  background-image: url("../images/arrow-right.svg");
+  background-repeat: no-repeat;
+
+}
+
 .breadcrumbs-link{
+  position: relative;
   text-decoration: none;
   color: #fff;
+  font-size: 16px;
 }
 
 .breadcrumbs-link-main{
@@ -324,7 +406,17 @@ body{
   min-width: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
-  margin-right: 25px;
+
+}
+
+.breadcrumbs-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #ffffff;
 }
 
 .container-filters{
@@ -432,6 +524,7 @@ input[type="email"]{
   text-transform: uppercase;
   color: #fff;
   background-color: #756157;
+  cursor: pointer;
 }
 
 .button-subscription{
@@ -444,6 +537,7 @@ input[type="email"]{
 }
 
 .button-search{
+  width: 574px;
   font-size: 20px;
   line-height: 36px;
   padding: 12px 15px;
@@ -662,15 +756,34 @@ input[type="email"]{
 }
 
 .footer-social-list{
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 5px 0;
   list-style: none;
-  display: flex;
 }
 
 .footer-social-item{
   min-height: 40px;
   min-width: 47px;
+}
+
+.social-button{
+  display: block;
+  position: relative;
+  max-height: 40px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.social-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3;
 }
 
 .footer-contacts{

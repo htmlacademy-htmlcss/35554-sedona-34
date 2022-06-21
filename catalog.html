@@ -50,7 +50,8 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
-                <svg class="breadcrumbs-icon" aria-hidden="true"  width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="breadcrumbs-icon" aria-hidden="true" width="13" height="13" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                         d="m.16 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"/>
                 </svg>
@@ -132,19 +133,19 @@
       <h2 class="visually-hidden" hidden>Список гостиниц Седоны</h2>
       <div class="sorting-area">
         <p class="number-hotels">Найдено гостиниц: <span>38</span></p>
-        <select class="select-control" name="sorting">
+        <select class="select-control select-control-arrow" name="sorting">
           <option selected value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
         <div class="button-area">
-          <a class="button-sorting button-current" href="#">
+          <a class="button-sorting button-sorting-table button-current" href="#">
             <span class="visually-hidden">Показать плитку</span>
           </a>
-          <a class="button-sorting" href="#">
+          <a class="button-sorting button-sorting-slideshow" href="#">
             <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a class="button-sorting" href="#">
+          <a class="button-sorting button-sorting-list" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
         </div>
@@ -186,8 +187,8 @@
           <span class="hotel-card-price">От 2500 ₽</span>
           <a class="button" href="#">подробнее</a>
           <button class="button-form button-favorites" type="submit">в избранное</button>
-          <p class="stars-rating">
-            <span class="visually-hidden">4 звезды</span>
+          <p class="stars-rating stars-rating-three">
+            <span class="visually-hidden">3 звезды</span>
           </p>
           <p class="hotel-card-rating">Рейтинг: 6,9</p>
         </li>
@@ -200,8 +201,8 @@
           <span class="hotel-card-price">От 1500 ₽</span>
           <a class="button" href="#">подробнее</a>
           <button class="button-form button-favorites" type="submit">в избранное</button>
-          <p class="stars-rating">
-            <span class="visually-hidden">4 звезды</span>
+          <p class="stars-rating stars-rating-two">
+            <span class="visually-hidden">2 звезды</span>
           </p>
           <p class="hotel-card-rating">Рейтинг: 5,0</p>
         </li>
@@ -229,12 +230,13 @@
           </li>
         </ul>
         <p class="number-page">Гостиниц на странице:</p>
-        <select class="select-control pagination-select" name="sorting">
+        <select class="select-control select-control-arrow pagination-select" name="sorting">
           <option selected value="4">4</option>
           <option value="2">2</option>
           <option value="6">6</option>
         </select>
       </div>
+
     </section>
     <section class="catalog-subscription">
       <h2 class="subscription-title">Подпишитесь на рассылку</h2>

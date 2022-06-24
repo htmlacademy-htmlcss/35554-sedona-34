@@ -366,10 +366,16 @@ body {
 }
 
 .subscription-input {
+  width: 600px;
   grid-column: 1 / 2;
-  border-radius: 10px 0 0 10px;
   padding: 19px 22px;
   box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 10px 0 0 10px;
 }
 
 /* Filters */
@@ -487,6 +493,10 @@ body {
   margin-right: 70px;
 }
 
+.catalog-filters .catalog-filter-group:nth-child(2) {
+  margin-right: auto;
+}
+
 .catalog-filter-title {
   font-size: 20px;
   line-height: 26px;
@@ -494,6 +504,11 @@ body {
   text-transform: capitalize;
   padding: 0;
   padding-bottom: 30px;
+}
+
+.filter-price-title {
+  padding-bottom: 0;
+  margin-bottom: 34px;
 }
 
 .catalog-filter-list {
@@ -507,39 +522,86 @@ body {
 }
 
 .control {
-  padding-left: 15px;
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
 }
 
 .catalog-filter-price {
+  display: flex;
+  flex-direction: column;
   width: 290px;
-  margin: 0 70px 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 145px);
 }
 
-.filter-price-title {
-  grid-column: 1 / 3;
-  padding-bottom: 0;
-  margin-bottom: 30px;
+.range-wrapper-input {
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .control-input-price {
   height: 48px;
+  width: 145px;
   box-sizing: border-box;
   border: 2px solid #fff;
+  border-radius: 4px 0 0 4px;
   padding-left: 18px;
   font-size: inherit;
   line-height: inherit;
   background-color: transparent;
   color: #fff;
-  width: 145px;
+}
+
+.range-wrapper-input label:nth-child(2) .control-input-price {
+  border-radius: 0 4px 4px 0;
+}
+
+.range {
+  position: relative;
+  height: 20px;
+}
+
+.range-scale, .range-bar {
+  position: absolute;
+  height: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.range-scale {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  background-color: #ffffff;
 }
 
 .control-range {
+  position: absolute;
   width: 290px;
+  height: 20px;
   margin: 0;
-  margin-top: 20px;
   padding: 0;
+  appearance: none;
+  background-color: transparent;
+}
+
+.control-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
 }
 
 .container-button {
@@ -549,15 +611,6 @@ body {
 }
 
 /* Form */
-
-input[type="email"] {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  background-color: #F2F2F2;
-  border: none;
-  width: 600px;
-}
 
 .button-form {
   border: none;
@@ -696,10 +749,11 @@ input[type="email"] {
   font-size: 18px;
   width: 290px;
   padding-left: 14px;
+  appearance: none;
 }
 
 .select-control-arrow {
-  padding-right: 20px;
+  padding-right: 40px;
   background-image: url("../images/arrow-bottom-black.svg");
   background-repeat: no-repeat;
   background-size: 12px 8px;

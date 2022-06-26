@@ -1306,6 +1306,8 @@ body {
 
 .search-form-field:active {
   background-color: #ffffff;
+  border: 3px solid #000000;
+  border-radius: 4px;
 }
 
 .search-button {
@@ -1418,6 +1420,11 @@ body {
 .button-modal:active {
   background-color: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  appearance: none;
 }
 
 /* Tooltip */

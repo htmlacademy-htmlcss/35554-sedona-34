@@ -809,12 +809,32 @@ body {
   appearance: none;
 }
 
+.select-control:hover {
+  border-color: #68A2CA;
+}
+
+.select-control:focus {
+  border-color: #68A2CA;
+}
+
+.select-control:active {
+  border-color: #3F5E72;
+}
+
+.select-control:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
 .select-control-arrow {
   padding-right: 40px;
   background-image: url("../images/arrow-bottom-black.svg");
   background-repeat: no-repeat;
   background-size: 12px 8px;
   background-position: center right 20px;
+}
+
+.select-control-arrow:disabled {
+  background-image: url("../images/arrow-bottom.svg");
 }
 
 .button-area {

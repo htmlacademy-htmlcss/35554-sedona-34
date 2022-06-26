@@ -169,6 +169,79 @@
       </a>
     </section>
   </footer>
+
+  <div class="modal-container">
+    <div class="modal modal-search">
+      <button class="modal-close-button">
+        <svg class="modal-close-icon" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/>
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group">
+            <label class="search-form-label" for="data-in">Дата заезда:</label>
+            <input class="search-form-field search-form-field-icon" type="date" id="data-in"
+                   name="data-in" placeholder="27 апреля 2020">
+            <span class="form-description search-form-error">Мы не можем отправить вас в прошлое.</span>
+          </p>
+          <p class="field-group">
+            <label class="search-form-label" for="data-out">Дата выезда:</label>
+            <input class="search-form-field search-form-field-icon" type="date" id="data-out"
+                   name="data-out" placeholder="1 сентября 2021">
+            <span class="form-description">На эти даты есть свободные номера. Пока есть.</span>
+          </p>
+          <div class="field-group">
+            <p class="field-group-adult">
+              <label class="search-form-label label-adult" for="adult">Взрослые:</label>
+              <button class="search-button search-button-minus">
+                <span class="visually-hidden">Уменьшить количество посетителей</span>
+                <svg class="search-icon" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0v1h13V0H0Z"/>
+                </svg>
+                </svg>
+              </button>
+              <input class="search-form-field number-person" type="number" id="adult"
+                     name="adult" value="2">
+              <button class="search-button search-button-plus">
+                <span class="visually-hidden">Увеличить количество посетителей</span>
+                <svg class="search-icon" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                </svg>
+                </svg>
+              </button>
+            </p>
+            <p class="field-group-childs">
+            <span class="search-form-label form-label-icon">
+              <label class="search-form-label label-child" for="childs">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
+              <button class="search-button search-button-minus">
+                <span class="visually-hidden">Уменьшить количество посетителей</span>
+                <svg class="search-icon" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0v1h13V0H0Z"/>
+                </svg>
+              </button>
+              <input class="search-form-field number-person" type="number" id="childs"
+                     name="childs" value="1">
+              <button class="search-button search-button-plus">
+                <span class="visually-hidden">Увеличить количество посетителей</span>
+                <svg class="search-icon" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                </svg>
+              </button>
+            </p>
+          </div>
+          <button class="button-form button-modal" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </div>
 </body>
 </html>

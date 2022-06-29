@@ -434,6 +434,7 @@ body {
 
 .breadcrumbs-item {
   position: relative;
+  margin-right: 26px;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
@@ -442,13 +443,9 @@ body {
   width: 6px;
   height: 9px;
   top: 7px;
-  left: 24px;
+  right: -16px;
   background-image: url("../images/arrow-right.svg");
   background-repeat: no-repeat;
-}
-
-.breadcrumbs-item + .breadcrumbs-item {
-  margin-left: 26px;
 }
 
 .breadcrumbs-link {

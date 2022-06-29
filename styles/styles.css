@@ -247,6 +247,11 @@ body {
   width: 400px;
 }
 
+.advantages-housing .advantages-description {
+  padding-right: 110px;
+  padding-left: 110px;
+}
+
 .advantages-item::before {
   content: "";
   position: absolute;
@@ -628,7 +633,7 @@ body {
   position: relative;
 }
 
-.range-wrapper-input label:nth-child(2) .control-input-price {
+.control-input-price-right {
   border-radius: 0 4px 4px 0;
 }
 

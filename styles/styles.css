@@ -198,6 +198,7 @@ body {
 /* Main */
 
 .main-hero {
+  background-color: #3F5E72;
   background-image: url("../images/divider.png"), url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -208,7 +209,11 @@ body {
   display: block;
   margin: 0 auto;
   padding-top: 50px;
-  margin-bottom: 145px;
+  margin-bottom: 82px;
+}
+
+.hero-text {
+  background-color: #ffffff;
 }
 
 .hero-description {
@@ -217,6 +222,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   width: 620px;
+  padding-top: 63px;
   margin: 0 auto;
   text-align: center;
 }
@@ -402,6 +408,7 @@ body {
 .subscription-input:focus {
   background-color: #E6E6E6;
   border-color: #83B3D3;
+  outline: none;
 }
 
 .subscription-input:not(:placeholder-shown) {
@@ -577,13 +584,14 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:focus .control-mark {
+.control-input:focus + .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
 
-.control:active .control-mark {
+.control-input:active + .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
@@ -650,8 +658,9 @@ body {
 }
 
 .control-input-price:focus {
-  box-shadow: 0 0 0 3px #81B3D2;
+  box-shadow: 0 0 0 3px #81B3D2 inset;
   border-color: #ffffff;
+  outline: 3px solid #81B3D2;
 }
 
 .control-input-price:active {
@@ -663,7 +672,8 @@ body {
   height: 20px;
 }
 
-.range-scale, .range-bar {
+.range-scale,
+.range-bar {
   position: absolute;
   height: 4px;
   top: 50%;

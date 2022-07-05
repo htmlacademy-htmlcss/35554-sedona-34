@@ -774,17 +774,17 @@ body {
 }
 
 .button-subscription:hover,
-.button-form-apply:hover{
+.button-form-apply:hover {
   background-color: #68A2CA;
 }
 
 .button-subscription:focus,
-.button-form-apply:focus{
+.button-form-apply:focus {
   background-color: #68A2CA;
 }
 
 .button-subscription:active,
-.button-form-apply:active{
+.button-form-apply:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82B3D3;
 }
